@@ -1,0 +1,1116 @@
+@charset "utf-8";
+
+/*全体の設定
+---------------------------------------------------------------------------*/
+html {
+  font-size: 62.5%;/* 1rem=10px */
+}
+
+body {
+  background: #fff;
+  color: #333;
+  /*全体の文字色*/
+  margin: 0px;
+  padding: 0px;
+  font: 16px /* 幅750pxの20px */
+  "Kozuka Gothic Pr6N","メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
+}
+
+*,*:before,*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .sp {
+    display: none;
+  }
+  .pc {
+    display: block;
+  }
+
+
+/* 見出し -----*/
+h1 {
+  font-size: 8rem;/* 80px */
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.6em;
+}
+
+h3 {
+  font-size: 2.4rem;
+  line-height: 1em;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 1.2em;
+}
+
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.3em;
+}
+
+h6 {
+  font-size: 1.6rem;
+  line-height: 1.5em;
+}
+/* 見出し end-----*/
+
+
+
+.container > div {
+  position: relative;
+  font-size: clamp(1.5rem,3vw,1.6rem);
+}
+
+
+
+/* ファーストビュー ---------------*/
+#first-view {
+  font-family: "ヒラギノ明朝 Pro";
+}
+
+#first-view > img {
+  width: 100%;
+}
+
+#first-view .wrap > p {
+  font-size: 1.8rem;
+  color: #6e7a8f;
+  margin: 4% 0;
+}
+/* ファーストビュー end---------------*/
+
+
+
+/* 選ばれる理由 ---------------*/
+#reasons {
+  padding: clamp(3rem,6.25vw,5rem);
+  background: url(../img/reason-back.png) no-repeat;
+  background-size: auto;
+}
+
+#reasons img {
+  border-radius: 1.5rem;
+}
+
+#reasons .mainttl-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+#reasons .mainttl {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1rem,2vw,1.5rem);
+  width: 46%;
+  margin: 0 auto;
+  color: rgb(53, 66, 89);
+  margin: 0 1rem;
+  white-space: nowrap;
+}
+
+#reasons .mainttl > p,#reasons .ttl-wrap > p {
+  font-family: "Arial";
+  color: rgb(37, 133, 208);
+  font-style: italic;
+  text-shadow: 0.5rem 0.5rem 0 rgb(37, 133, 208,0.3);
+}
+#reasons .mainttl > p {
+  font-size: clamp(7.5rem,15.3vw,15rem);
+  font-weight: 700;
+}
+
+
+#reasons .mainttl > div {
+  font-size: clamp(2.2rem,4.5vw,3.6rem);
+  text-align: center;
+}
+#reasons .mainttl h2 span:first-of-type {
+  font-size: clamp(2.8rem,5vw,4.8rem);
+  padding-right: 0.2rem;
+}
+#reasons .mainttl h2 span:last-of-type {
+  font-size: clamp(3.2rem,6.25vw,6rem);
+  padding-left: 0.2rem;
+}
+
+#reasons .items-wrap {
+  margin: 5rem 0;
+}
+#reasons .items-wrap:nth-last-of-type(4) {
+  margin-top: 4rem;
+}
+
+#reasons .ttl-wrap {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  font-weight: 700;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(37, 133, 208, 0.1);
+  padding: 2rem;
+}
+
+#reasons .ttl-wrap > p {
+  font-size: clamp(5rem,9.3vw,9rem);
+  color: #2585d0;
+  line-height: 1;
+}
+
+#reasons .ttl-wrap div > p {
+  font-size: clamp(1.4rem,2.9vw,2.4rem);
+  color: #2585d0;
+}
+#reasons .ttl-wrap div > h2 {
+  font-size: clamp(2rem,4.1vw,3.6rem);
+  color: rgb(53, 66, 89);
+}
+
+#reasons .detail-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem 2.5rem;
+  background-color: rgb(250, 248, 248,0.6);
+  box-shadow: 0px 2px 2.85px 0.15px rgba(0, 0, 0, 0.1);
+}
+#reasons .detail-wrap img {
+  width: 40%;
+}
+/* 選ばれる理由 end---------------*/
+
+
+
+/* 検査の意味 ---------------*/
+#meaning {
+  padding: clamp(5rem,10.8vw,7rem) clamp(3rem,6.5vw,5rem);
+  background-color: rgba(37, 133, 208, 0.1);
+}
+
+#meaning .ttl {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+#meaning .ttl div {
+  width: 9.3%;
+  height: 0.4rem;
+  background-color: #333;
+  margin: 0 auto 4%;
+}
+
+#meaning > p {
+  padding: 0 3rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+#meaning > p span {
+  color: #2585d0;
+}
+
+#meaning > p + div {
+  position: relative;
+  text-align: center;
+  background-color: #2585d0;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  margin: 5rem auto;
+}
+#meaning > p + div::after {
+  content: "";
+  position: absolute;
+  top: 99%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2585d0;
+  width: 2.5rem;
+  height: 1rem;
+  clip-path: polygon(0 0,100% 0,50% 100%);
+}
+
+.ditection {
+  position: relative;
+  margin-top: 3rem;
+  padding: clamp(5rem,10.8vw,7.5rem) 3rem 5rem;
+  background-color: #fff;
+}
+.ditection img {
+  width: 16%;
+}
+
+.ditection h3 {
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: #2585d0;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.ditection h3 span {
+  font-size: clamp(1.6rem,3.4vw,2rem);
+}
+
+.ditection > div {
+  margin: clamp(3rem,6.5vw,4rem) 0;
+}
+.angular-arrow {
+  width: clamp(3rem,6.5vw,6rem);
+  height: clamp(1.5rem,3.2vw,3rem);
+  background-color: #2585d0;
+  clip-path: polygon(0 0,50% 66.6%,100% 0,100% 33.3%,50% 100%,0 33.3%);
+  margin: 0 auto;
+}
+.angular-arrow:nth-of-type(2) {
+  margin-top: -0.5rem;
+}
+
+.ditection > div + p {
+  text-align: center;
+  color: #2585d0;
+  font-size: clamp(1.8rem,4vw,2rem);
+  margin-bottom: 2rem;
+  padding: 0 1.5rem;
+}
+/* 検査の意味 end---------------*/
+
+
+
+/* 頻度 ---------------*/
+#frequency {
+  padding: 5rem 0;
+}
+
+#frequency > div:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: clamp(2rem,4.3vw,4rem);
+}
+#frequency > div:nth-of-type(1) p {
+  text-align: center;
+}
+#frequency > div:nth-of-type(1) p span {
+  color: #2585d0;
+  font-size: clamp(2.4rem,5.2vw,3rem);
+  font-weight: 700;
+}
+#frequency > div:nth-of-type(1) p span > span {
+  font-size: clamp(2rem,4.3vw,2.4rem);
+}
+
+#frequency .wrap {
+  background: url(../img/frecency.png);
+  width: 100%;
+  padding: clamp(3rem,6.5vw,5rem);
+}
+
+#frequency .box {
+  background-color: rgb(250, 248, 248,0.7);
+  padding: 5rem clamp(3rem,6.5vw,5rem);
+}
+#frequency .box > div {
+  width: fit-content;
+  margin: 0 auto clamp(3rem,6.5vw,5rem);
+}
+#frequency .box > div > p {
+  transform: rotate(-5deg);
+  font-size: clamp(1.6rem,3.4vw,2.4rem);
+  margin-bottom: 5rem;
+  margin-left: -2rem;
+}
+#frequency .box > div > div p {
+  font-size: clamp(3rem,6.5vw,4.8rem);
+  padding: 0 1rem;
+  line-height: 1.2;
+  display: inline;
+  background: linear-gradient(to bottom,transparent 70%,rgb(227, 238, 247) 70%);
+}
+#frequency .box > div > div p span {
+  color: #2585d0;
+  font-weight: 700;
+  font-size: clamp(4.8rem,10.4vw,7.2rem);
+}
+/* 頻度 end---------------*/
+
+
+
+/* 検査の種類 ---------------*/
+#inspection {
+  padding: 0 clamp(3rem,6.25vw,5rem);
+}
+#inspection img {
+  width: 50%;
+  box-shadow: 0.5rem 0.5rem 1rem rgb(53, 66, 89,0.3);
+}
+
+#inspection .ttl {
+  text-align: center;
+}
+
+#inspection .ttl div {
+  width: 9.3%;
+  height: 0.4rem;
+  background-color: #333;
+  margin: 0 auto 4%;
+}
+
+#inspection h3 {
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+
+#inspection .wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+#inspection .box {
+  position: relative;
+  border-left: 1rem solid #354259;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+#inspection .text-wrap {
+  padding: 3rem;
+}
+
+#inspection .box > p {
+  font-size: clamp(3.6rem,7.5vw,6rem);
+  font-family: "Arial";
+  line-height: 1;
+  color: rgba(53, 66, 89, 0.04);
+  font-weight: bold;
+  font-style: italic;
+  position: absolute;
+  top: 0;
+  left: 2.5rem;
+}
+/* 検査の種類 end---------------*/
+
+
+
+/* 検査の流れ ---------------*/
+#flow {
+  background-color: rgb(227, 238, 247);
+  padding: 5rem clamp(3rem,6.25vw,5rem) 7.5rem;
+}
+
+#flow .ttl {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+#flow .ttl div {
+  width: 9.3%;
+  height: 0.4rem;
+  background-color: #333;
+  margin: 0 auto 4%;
+}
+
+.wrap-flowchart {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 4.5%;
+}
+
+.chart-left {
+  color: #fff;
+  width: 22%;
+}
+.chart-left p {
+  padding: 0 2rem;
+}
+
+.chart-right {
+  width: 73.5%;
+} 
+
+.upper-box {
+  position: relative;
+  width: 100%;
+  height: 15.5%;
+  background-color: #52617c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2.5rem;
+}
+
+.under-box {
+  position: relative;
+  width: 100%;
+  height: 82.5%;
+  background-color: rgb(123, 141, 173);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2.5rem;
+}
+
+.under-box::before {
+  content: "";
+  position: absolute;
+  top: -0.07rem;
+  left: 0;
+  background-color: #52617c;
+  width: 100%;
+  height: 2.5rem;
+  clip-path: polygon(0 0,50% 100%,100% 0);
+}
+
+.under-box::after {
+  content: "";
+  position: absolute;
+  bottom: -2.47rem;
+  left: 0;
+  background-color: rgb(123, 141, 173);
+  width: 100%;
+  height: 2.5rem;
+  clip-path: polygon(0 0,50% 100%,100% 0);
+}
+
+.step-box {
+  position: relative;
+  width: 100%;
+  border-radius: 3rem;
+  background-color: #fff;
+  box-shadow: 0px 3px 2.91px 0.09px rgba(0, 0, 0, 0.25);
+  padding: clamp(3rem,6.25vw,5rem) 3rem;
+}
+.step-box h3 {
+  color: #2585d0;
+  margin-bottom: 4%;
+  text-align: center;
+}
+
+.step-box p {
+  width: fit-content;
+  margin: 0 auto;
+}
+/* 検査の流れ end---------------*/
+
+
+
+/* 受診者の声 ---------------*/
+#voice {
+  padding: 5rem clamp(4rem,8.3vw,5rem);
+  background-color: rgb(250, 248, 248);
+}
+
+#voice .ttl {
+  text-align: center;
+}
+
+#voice .ttl div {
+  width: 9.3%;
+  height: clamp(0.2rem,0.3rem,0.4rem);
+  background-color: #333;
+  margin: 0 auto 4%;
+}
+
+
+.voice-wrap {
+  position: relative;
+  padding: 2rem 4%;
+  margin: 7rem 0;
+}
+.voice-wrap img {
+  width: 9%;
+  position: absolute;
+  z-index: 1;
+}
+.voice-wrap img:first-of-type {
+  top: 0;
+  left: 0;
+}
+.voice-wrap img:last-of-type {
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+
+
+.voice-flame {
+  position: relative;
+  padding: 1.5rem 2rem;
+}
+.voice-flame::before,.voice-flame::after {
+  content: "";
+  width: 90%;
+  height: 25%;
+  position: absolute;
+}
+.voice-flame::before{
+  top: 0;
+  right: 0;
+  border-top: 0.2rem solid #333;
+  border-right: 0.2rem solid #333;
+}
+.voice-flame::after {
+  bottom: 0;
+  left: 0;
+  border-bottom: 0.2rem solid #333;
+  border-left: 0.2rem solid #333;
+}
+
+.voice-box {
+  padding: 4rem 4% 3rem;
+  background-color: rgb(213, 229, 242,0.5);
+}
+.voice-wrap:nth-last-child(2) .voice-box,.voice-wrap:nth-last-child(1) .voice-box {
+  background-color: rgb(247, 237, 248,0.5);
+}
+
+.voice-box h3 {
+  margin: 0 auto;
+  width: fit-content;
+  text-align: center;
+  font-weight: 700;
+  font-size: clamp(1.8rem,3.75vw,2.4rem);
+}
+
+.voice-box h3 > p {
+  display: inline;
+  background: linear-gradient(to bottom,transparent 60%,rgb(79, 150, 206,0.5) 60%);
+}
+.voice-wrap:nth-last-child(2) .voice-box h3 > p,.voice-wrap:nth-last-child(1) .voice-box h3 > p {
+  background: linear-gradient(to bottom,transparent 60%,rgb(237, 189, 240,0.5) 60%);
+}
+
+.voice-box p:first-of-type {
+  margin: 3rem 0 2rem;
+}
+.voice-box > p:last-of-type {
+  text-align: right;
+  font-size: clamp(1.2rem,2.5vw,1.4rem);
+  color: rgb(51, 51, 51,0.8);
+}
+/* 受診者の声 end---------------*/
+
+
+
+/* FAQ ---------------*/
+#FAQ {
+  padding: 5rem clamp(3rem,6.25vw,5rem);
+}
+
+#FAQ .ttl {
+  text-align: center;
+}
+
+#FAQ .ttl div {
+  width: 9.3%;
+  height: clamp(0.2rem,0.3rem,0.4rem);
+  background-color: #333;
+  margin: 0 auto 4%;
+}
+
+#FAQ .wrap {
+  margin: 5rem 0;
+}
+
+.q-box {
+  width: 100%;
+  border-top: 0.2rem solid rgb(53, 66, 89,0.5);
+  box-shadow: 0px 2px 2.85px 0.15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 4.6% 7% 4.6% 4.6%;
+}
+
+.a-box {
+  background-color: rgb(227, 238, 247);
+  padding: 3rem 7% 3rem 4.6%;
+  display: flex;
+  gap: 2.5rem;
+}
+
+#FAQ .wrap > div img {
+  width: clamp(4rem,8.3vw,10%);
+  height: clamp(4rem,8.3vw,10%);
+}
+
+.a-box > p {
+  color: #6b6969;
+}
+/* FAQ end---------------*/
+
+
+/* footer ---------------*/
+footer {
+  background-color: #354259;
+  color: #fff;
+  padding: clamp(5rem,10.8vw,8rem) clamp(3rem,6.5vw,5rem) 3rem;
+  font-size: clamp(1.2rem,2.6vw,1.4rem);
+}
+
+footer .wrap {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-bottom: 5rem;
+}
+
+footer .shop-name p {
+  font-size: 2rem;  
+}
+
+footer .wrap-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+footer .wrap-right {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 5rem;
+}
+
+
+.shop-name {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.shop-name p {
+  font-family: "Hiragino Mincho Pro";
+  font-size: clamp(1.6rem,3.3vw,2.4rem);
+}
+.shop-name p:hover {
+  color: rgba(154, 153, 153, 0.8);
+}
+
+
+.btn-call {
+  position: relative;
+  background-color: #fff;
+  color: #354259;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.6rem;
+  padding: 0.5rem 2rem 0.5rem 0.8rem;
+  border-radius: 3.5rem;
+}
+.btn-call .icon {
+  width: 4rem;
+  height: 4rem;
+  background-color: #354259;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-call .icon img {
+  width: 50%;
+  height: 50%;
+}
+
+.btn-call:hover {
+  background-color: rgb(227, 238, 247);
+  transition: all 0.8s;
+}
+
+footer > p {
+  font-family: "Hiragino Mincho Pro";
+  text-align: center;
+  font-size: clamp(1rem,2vw,1.4rem);
+}
+/* footer end---------------*/
+
+
+
+/* cta */
+.cta {
+  background-color: #354259;
+  padding: 5rem clamp(3rem,6.5vw,10.3rem);
+  color: #fff;
+  text-align: center;
+}
+.cta p {
+  font-size: clamp(1.2rem,2.6vw,1.6rem);
+}
+
+.cta div {
+  position: relative;
+  color: #354259;
+  margin-top: clamp(1rem,2.1vw,2rem);
+}
+
+.cta img {
+  width: 72.5%;
+}
+/* cta end*/
+
+
+
+/* リスト -----*/
+li {
+  list-style: none;
+}
+/* リスト end-----*/
+
+
+
+/* 矢印 ----------*/
+.arrow-to-bottom {
+  margin: 0 auto;
+  width: clamp(4rem,9.3vw,6.5rem);
+  height: clamp(1.5rem,3.1vw,3.5rem);
+  clip-path: polygon(0 0,50% 100%,100% 0);
+  background-color: #52617c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+}
+.triangle {
+  width: 3.2rem;
+  height: 2.7rem;
+  clip-path: polygon(0 0,50% 100%,100% 0)
+}
+
+.arrow-to-top {
+  margin: 0 auto;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-top: 2px solid #333;
+  border-left: 2px  solid #333;
+  transform: rotate(45deg);
+}
+
+
+/* ボタン設定 ---------------*/
+.btn-cta {
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+}
+
+#first-view .btn-cta {
+  font-size: 1.8rem;
+  width: 32rem;
+  font-weight: 700;
+}
+
+#first-view .btn-cta img {
+  width: 32rem;
+  box-shadow: 0px 1px 0.99px 0.01px rgba(0, 0, 0, 0.25);
+}
+.btn-cta img {
+  width: 70%;
+}
+.sharp-arrow + .btn-cta {
+  width: 80%;
+  margin: 0 auto;
+  font-size: clamp(1.6rem,3.3vw,2.2rem);
+}
+.sharp-arrow + .btn-cta img {
+  width: 90%;
+}
+
+.btn-cta p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* ホバー時1.01倍になる */
+.btn-cta:hover,.cta div img:hover {
+  transform: translateY(0.2rem);
+  border: transparent;
+}
+
+/* トップに戻る固定ボタン */
+.btn-to-top {
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 2px 2.85px 0.15px rgba(25, 38, 30, 0.2); 
+  display: flex; 
+  align-items: center;
+  transform: scale(1,1);
+  /* 位置設定 */
+  position: fixed;
+  bottom: 1rem;
+  z-index: 10;
+}
+/* 位置設定 */
+#site-map > div:nth-child(3){
+  float: right;
+  padding-right: 2rem;
+}
+/* ホバーで1.05倍 */
+.btn-to-top:hover {
+  transform: scale(1.05,1.05);
+}
+
+
+/*リンク（全般）設定
+---------------------------------------------------------------------------*/
+a {
+  color: #555;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+}
+
+/* リンク範囲を親要素の大きさにする(子要素aに付ける) */
+.whole {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-indent: 100%; /* テキスト非表示 */
+  white-space: nowrap; /* テキスト非表示 */
+  overflow: hidden; /* テキスト非表示 */
+}
+
+/* マウスオンした時の文字色 */
+a:hover {
+  color: rgba(154, 153, 153, 0.8);
+}
+
+
+/*コンテナー（HPを囲むブロック）
+---------------------------------------------------------------------------*/
+.container {
+  width: 100%;
+  max-width: 750px;
+  min-width: 320px;
+  /*コンテナー幅*/
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+
+
+/* メディアクエリ(レスポンシブ対応) ----------------------------------------*/
+/* タブレット(画面幅640px以下) ------------------------------*/
+@media screen and (max-width: 640px) {
+  
+  h1 {
+		font-size: 4rem;
+		line-height: 1.25em;
+	}
+
+	h2 {
+		font-size: 2.2rem;
+		line-height: 1.35em;
+	}
+
+	h3 {
+		font-size: 2rem;
+		line-height: 1.1em;
+	}
+
+	h4 {
+		font-size: 1.6rem;
+		line-height: 1.25em;
+	}
+
+	h5 {
+		font-size: 1.4rem;
+		line-height: 1.425em;
+	}
+
+	h6 {
+		font-size: 1.2rem;
+		line-height: 1.66em;
+	}
+
+
+  /* 検査の種類 -----*/
+  #inspection img {
+    width: 80%;
+  }
+    
+  #inspection .box {
+    flex-direction: column;
+  }
+    
+  #inspection .text-wrap {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #inspection .box:nth-of-type(2) {
+    flex-direction: column;
+  }
+  
+  #inspection .box:nth-of-type(2) .text-wrap {
+    margin: 0 auto;
+  }
+  /* 検査の種類 end-----*/
+
+    
+  footer .wrap {
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto 5rem;
+  }
+  footer .wrap-right {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+}
+
+
+/* スマホ(画面幅480px以下) ------------------------------*/
+@media screen and (max-width:480px) {
+  
+  h1 {
+    font-size: clamp(2.4rem,6.25vw,3.6rem);
+  }
+  
+  .sp {
+    display: block;
+  }
+  .pc {
+    display: none;
+  }
+
+  /* first-view -----*/
+  #first-view .wrap > p {
+    font-size: 1.2rem;
+    color: #6e7a8f;
+    margin: 5.3% 0;
+  }
+
+  #first-view .btn-cta {
+    font-size: 2.4vw;
+    width: clamp(12rem,42vw,20rem);
+  }
+  /* first-view end-----*/
+
+
+/* 検査の種類 -----*/
+  #inspection {
+    padding: 3rem;
+  }
+  
+  #inspection .box {
+    margin: 3rem auto 5rem;
+  }
+
+  #inspection .box > p {
+    margin: 2rem 0;
+  }
+/* 検査の種類 end-----*/
+
+
+  /* 流れ -----*/
+  .chart-left p {
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
+  }
+
+
+
+  /* 選ばれる理由 -----*/
+  #reasons .mainttl-wrap > p {
+    width: clamp(14%,14vw,20%);
+  }  
+
+  #reasons .detail-wrap {
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+  }
+  #reasons .detail-wrap p {
+    width: 100%;
+  }
+  #reasons .detail-wrap img {
+    width: 100%;
+  }
+  #reasons .detail-wrap {
+    padding: 1.5rem 2rem 3rem;
+  }
+  /* 選ばれる理由 end-----*/
+
+
+  /* 受診者の声 -----*/
+  #voice {
+    padding: 5rem 2rem;
+  }
+  
+  #voice .ttl {
+    text-align: center;
+  }
+  
+  .voice-wrap {
+    position: relative;
+    padding: 1rem;
+    margin: 3rem 0;
+  }
+  
+  .voice-flame {
+    padding: 0;
+  }
+  .voice-flame::before,.voice-flame::after {
+    display: none;
+  }
+  
+  .voice-box {
+    padding: 4rem 3rem 3rem;
+  }
+  /* 受診者の声 end-----*/
+  
+
+  /* FAQ -----*/
+  #info {
+    padding: 3rem 4rem;
+  }
+
+  .q-box {
+    padding: 1rem 2rem 1rem 2rem;
+  }
+  .a-box {
+    padding: 2rem 2rem;
+  }
+  /* FAQ end-----*/
+    
+
+    
+  .cta img {
+    width: 90%;
+  }
+
+}
